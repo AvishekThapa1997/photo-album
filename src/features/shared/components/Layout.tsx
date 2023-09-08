@@ -2,38 +2,20 @@ import React from 'react';
 import { type BaseProps } from '../types/BaseProps';
 import Header from './Header';
 import Row from './Row';
-import SideMenu, { SideMenuItems } from './SideMenu';
-import ImageOutlineIcon from '../icons/ImageOutlineIcon';
-import AlbumOutlineIcon from '../icons/AlbumOutlineIcon';
-import HeartOutlineIcon from '../icons/HeartOutlineIcon';
-import ImageFillIcon from '../icons/ImageFillIcon';
+import SideMenu from './SideMenu';
 
-const items: Array<SideMenuItems> = [
-  {
-    icon: ImageOutlineIcon,
-    label: 'Gallery',
-  },
-  {
-    icon: AlbumOutlineIcon,
-    label: 'Album',
-  },
-  {
-    icon: HeartOutlineIcon,
-    label: 'Favourite',
-  },
-];
 interface LayoutProps extends BaseProps {}
 
 export default function Layout({ children }: LayoutProps) {
   return (
-    <div>
+    <div className='max-w-[150rem] mx-auto'>
       <Header />
       <main>
         <Row>
-          <div>
-            <SideMenu items={items} />
+          <div className='fixed border-t-2 lg:static bottom-0 right-0 left-0 '>
+            <SideMenu />
           </div>
-          <div className='flex-1'>{children}</div>
+          <div>{children}</div>
         </Row>
       </main>
     </div>

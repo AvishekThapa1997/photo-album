@@ -3,20 +3,17 @@ import { Html, Head, Main, NextScript } from 'next/document';
 
 export default function Document() {
   return (
-    <Html
-      lang='en'
-      className='dark'
-    >
+    <Html lang='en'>
       <Head />
-      <body>
-        <ThemeProvider
+      <body className='overflow-hidden'>
+        {/* <ThemeProvider
           attribute='class'
-          defaultTheme='system'
+          defaultTheme='dark'
           enableSystem
-        >
-          <Main />
-          <NextScript />
-        </ThemeProvider>
+        > */}
+        <Main />
+        <NextScript />
+        {/* </ThemeProvider> */}
       </body>
     </Html>
   );

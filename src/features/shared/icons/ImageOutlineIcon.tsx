@@ -1,5 +1,5 @@
 import React from 'react';
-import IconSVGProps from '../types/IconSVGProps';
+import IconSVGProps from '../types/SVGIconProps';
 import { cn } from '@src/lib/utils';
 
 export default function ImageOutlineIcon({ className }: IconSVGProps) {
@@ -10,7 +10,7 @@ export default function ImageOutlineIcon({ className }: IconSVGProps) {
       viewBox='0 0 24 24'
       strokeWidth={1.5}
       stroke='currentColor'
-      className='w-6 h-6'
+      className={cn('w-6 h-6', className)}
     >
       <path
         strokeLinecap='round'

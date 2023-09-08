@@ -1,25 +1,33 @@
 import React, { ComponentProps } from 'react';
 import { Button } from './Button';
-import { ImageIcon } from 'lucide-react';
+import Link from 'next/link';
+import { useRouter } from 'next/router';
+import LinkButton from './LinkButton';
 
 interface SideMenuItemProps extends ComponentProps<typeof Button> {
   label: string;
   icon: React.ComponentType<ComponentProps<any>>;
+  path: string;
+  isActive: boolean;
 }
 
 export default function SideMenuItem({
   label,
+  path,
+  isActive,
   icon: Icon,
-  ...props
 }: SideMenuItemProps) {
   return (
-    <Button
+    <LinkButton
+      href={path}
       variant='ghost'
-      className='w-full gap-4 justify-start items-center'
-      {...props}
+      className='lg:w-full flex-col lg:flex-row items-center h-auto w-auto gap-2 lg:gap-4 lg:justify-start'
+      isActive={isActive}
     >
-      <Icon />
-      <span className='tracking-wider'>{label}</span>
-    </Button>
+      <Icon className='h-6 w-6 md:h-8 md:w-8' />
+      <span className='tracking-wider hidden text-xs sm:text-sm lg:block'>
+        {label}
+      </span>
+    </LinkButton>
   );
 }
