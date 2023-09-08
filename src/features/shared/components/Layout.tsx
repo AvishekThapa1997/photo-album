@@ -15,7 +15,7 @@ export default function Layout({ children }: LayoutProps) {
           <div className='fixed border-t-2 lg:static bottom-0 right-0 left-0 '>
             <SideMenu />
           </div>
-          <div>{children}</div>
+          <div className='p-4 flex-1'>{children}</div>
         </Row>
       </main>
     </div>
