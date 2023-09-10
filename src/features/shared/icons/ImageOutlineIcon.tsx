@@ -1,6 +1,6 @@
 import React from 'react';
 import IconSVGProps from '../types/SVGIconProps';
-import { cn } from '@src/lib/utils';
+import { cn } from '@src/features/shared/lib/utils';
 
 export default function ImageOutlineIcon({ className }: IconSVGProps) {
   return (

@@ -1,4 +1,4 @@
-import { cn } from '@src/lib/utils';
+import { cn } from '@src/features/shared/lib/utils';
 import React from 'react';
 import SideMenuItem from './SideMenuItem';
 import { useRouter } from 'next/router';

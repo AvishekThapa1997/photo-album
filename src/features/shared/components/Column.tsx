@@ -1,6 +1,6 @@
 import React from 'react';
 import { type BaseProps } from '../types/BaseProps';
-import { cn } from '@src/lib/utils';
+import { cn } from '@src/features/shared/lib/utils';
 
 interface ColumnProps extends React.HTMLAttributes<HTMLDivElement>, BaseProps {}
 export default function Column({ children, className }: ColumnProps) {

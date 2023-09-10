@@ -16,7 +16,7 @@ export default function Header() {
     };
   }
   return (
-    <header>
+    <header className='h-[8vh]'>
       <Row className='w-full justify-between items-center px-6 py-2 shadow-sm shadow-slate-500/50'>
         <Logo render={() => <p className='uppercase'>photo app</p>} />
         <Row className='gap-4 items-center'>

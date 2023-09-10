@@ -6,14 +6,8 @@ export default function Document() {
     <Html lang='en'>
       <Head />
       <body className='overflow-hidden'>
-        {/* <ThemeProvider
-          attribute='class'
-          defaultTheme='dark'
-          enableSystem
-        > */}
         <Main />
         <NextScript />
-        {/* </ThemeProvider> */}
       </body>
     </Html>
   );

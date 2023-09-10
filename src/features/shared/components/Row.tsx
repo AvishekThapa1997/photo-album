@@ -1,6 +1,6 @@
 import React from 'react';
 import { type BaseProps } from '../types/BaseProps';
-import { cn } from '@src/lib/utils';
+import { cn } from '@src/features/shared/lib/utils';
 
 interface RowProps extends React.HTMLAttributes<HTMLDivElement>, BaseProps {}
 export default function Row({ children, className }: RowProps) {

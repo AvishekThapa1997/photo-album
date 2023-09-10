@@ -1,6 +1,6 @@
 import React from 'react';
 import { BaseProps } from '../types/BaseProps';
-import { cn } from '@src/lib/utils';
+import { cn } from '@src/features/shared/lib/utils';
 import SVGIconProps from '../types/SVGIconProps';
 
 export default function AlbumOutlineIcon({ className }: SVGIconProps) {

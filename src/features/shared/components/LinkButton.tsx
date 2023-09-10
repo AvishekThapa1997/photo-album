@@ -2,7 +2,7 @@ import Link from 'next/link';
 import React from 'react';
 import { buttonVariants } from './Button';
 import { VariantProps } from 'class-variance-authority';
-import { cn } from '@src/lib/utils';
+import { cn } from '@src/features/shared/lib/utils';
 import { BaseProps } from '../types/BaseProps';
 
 interface LinkButtonProps
